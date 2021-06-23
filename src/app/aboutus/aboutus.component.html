@@ -1,0 +1,38 @@
+<p>aboutus works!</p>
+<!--ngIf-->
+<button class="btn btn-info" (click)="changestatus()">{{status?'hide':'show'}}</button><br>
+<h1 *ngIf=status>Welcome</h1>
+
+<!--ngFor-->
+<ul *ngFor="let v of numbers;let i=index">
+    <li>value of index {{i}} is {{v}}</li>
+</ul>
+
+
+<!--interpolation-->
+{{n}}
+<br>
+{{name}}
+<!--property databinding-->
+<h1 [innerHTML]=n></h1>
+<input type="text" [value]=name>
+<img [src]=imgurl alt="no img" width="200px" height="300px">
+<!--event databinding-->
+
+<input type="text" #ref>
+<!--#ref is referece variable to read value of input field-->
+<button (click)="test(ref.value)">clickme</button>
+<br><br>
+<button (click)="incvalue()">increment</button>
+{{counter}}
+<br><br>
+<!--ngIf-->
+
+
+<input type="text" [(ngModel)]="str">
+<br>
+{{str}}
+
+
+@input()
+@output()

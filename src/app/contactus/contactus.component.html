@@ -1,0 +1,15 @@
+<p>contactus works!</p>
+
+<!--services-->
+<table class="table">
+    <thead>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>BODY</th>
+    </thead>
+    <tr *ngFor="let obj of receivedData">
+        <td>{{obj.id}}</td>
+        <td>{{obj.title}}</td>
+        <td>{{obj.body}}</td>
+    </tr>
+</table>

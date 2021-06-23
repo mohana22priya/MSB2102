@@ -1,0 +1,28 @@
+<p>news works!</p>
+<div>
+    {{today}}
+</div>
+<div>
+    date with pipes:{{today | date}}
+</div>
+<div>
+    date with short form:{{today | date:'short'}}
+</div>
+<div>
+    uppercase:{{names | uppercase}} <br>
+    lowercase:{{names | lowercase}} <br>
+    initcap case:{{names | titlecase}} <br>
+    original:{{names}}
+</div>
+<div>
+    salary:{{salary}} <br>
+    salary in dollars:{{salary | currency}} <br>
+    sal in INR:{{salary | currency:'INR'}}
+</div>
+<div>
+    ROT:{{rateofinterest | percent}}
+</div>
+<div>{{value}}</div>
+<div>
+    {{value | square}}
+</div>
